@@ -5,6 +5,7 @@ import random
 import asyncio
 from collections import defaultdict
 from profanity_check import predict, predict_prob
+import os
 #봇의 설정
 prefix = "~"  # 봇의 명령어 접두사
 intents = discord.Intents.all()  #모든 intents를 활성화
@@ -130,5 +131,7 @@ async def on_message(message):
 
     await bot.process_commands(message)
 
+access_token.eviron["BOT_TOKEN"]
+
 #봇을 실행
-bot.run('MTE5NTU5Mzg0NTkwNDI1Mjk0MA.G6E2S2.EuWUx-Ryua-fojAe0AAJH9tQWgXfOucUMaRs4w')
+bot.run('access_token')
